@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Questioner</title>
+
+    <style>
+        body {
+
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: auto;
+            margin-top: 3%;
+
+        }
+
+        nav {
+            width: 60vw;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.466);
+            margin: auto;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 26px;
+            padding: 3px;
+
+
+        }
+
+        main {
+            width: 60vw;
+            margin: auto;
+        }
+
+
+
+        p {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 25px;
+            border-left: 7px solid orangered;
+            margin-left: 39px;
+            color: #000000;
+        }
+
+        footer {
+            margin-top: 35px;
+            width: 60vw;
+            border-radius: 3px;
+            border: 3px solid rgba(34, 17, 51, 0.301);
+            border-top: none;
+            text-align: center;
+
+            margin: auto;
+            bottom: 0;
+
+        }
+
+        #welcome {
+
+            top: 0%;
+            z-index: 2;
+            background-color: black;
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+
+        }
+
+        #box {
+
+            width: 50%;
+            min-width: auto;
+            height: auto;
+            min-height: auto;
+            background-color: white;
+            margin: auto;
+            opacity: 1;
+            position: fixed;
+            top: 25%;
+            left: 25%;
+            z-index: 3;
+            padding: 25px;
+            border: solid 4px orange;
+            border-radius: 5px;
+            color: springgreen
+        }
+
+        #box>p {
+            border-left: none;
+            text-align: center;
+            margin-left: 0%;
+            padding: none;
+            border-radius: 5px;
+
+        }
+
+        #box>button {
+            opacity: 0.7;
+            padding: 12px 41px;
+            float: right;
+
+            border-color: #46b8da;
+
+            background-color: #46b8da;
+            color: white;
+            border-radius: 5px;
+
+
+        }
+
+        #box>button:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="welcome">
+        <div id="box">
+            <h2>Welcome, Please Answer The Following Questions. Thank You</h2>
+            <button id='close' onclick="closeMessageDialog()">Close </button>
+        </div>
+
+    </section>
+    <header>
+        <nav>
+            <h3> <a href="#">Questioner</a></h3>
+        </nav>
+    </header>
+    <main>
+        <h1 style="color:#627a81">Class 1 Lab</h1>
+        <p id="q1">Greeting </p>
+        <p id="q2"></p>
+        <p id="q3">Interesting </p>
+        <p id="q4"></p>
+    </main>
+    <footer>
+        <h5>
+            @copyright 2020
+        </h5>
+
+    </footer>
+    <script>
+        let q1, q2, q3, q4, d = document;
+
+
+        function closeMessageDialog() {
+            d.getElementById('welcome').style.display = "none";
+            questions()
+        }
+        function questions() {
+            //     q1 = prompt("Welcome, What is your name?")
+            //     alert("Your name is: " + q1);
+            //     q2 = prompt("How old are you?")
+            //     alert("Your age is: " + q2);
+            //     q3 = prompt("What is profession?")
+            //     alert("Your profession is: " + q3);
+            //     q4 = prompt("What is your Hoppy?")
+            //     alert("Your Hoppy is: " + q4)
+
+            //     console.log("Your name is: " + q1)
+            //     console.log("Your age is: " + q2)
+            //     console.log("Your profession is: " + q3)
+            //     console.log("Your Hoppy is: " + q4)
+
+
+
+            //     d.getElementById("q1").innerHTML += " " + q1.charAt(0).toUpperCase() + q1.slice(1);
+            //     d.getElementById("q2").innerHTML += q2 + "!! You Still very young. You shall live a happy life  ";
+            //     d.getElementById("q3").innerHTML += " " + q3.charAt(0).toUpperCase() + q3.slice(1) + ' Profession';
+            //     d.getElementById("q4").innerHTML += " " + q4.charAt(0).toUpperCase() + q4.slice(1) + ", WOW Great Hoppy to Have ";
+            // 
+        }
+
+
+    </script>
+</body>
+
+</html>

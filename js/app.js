@@ -15,7 +15,7 @@ function questions() {
     flag = false;
 
 
-    q1 = prompt("Do I people who talks too much?")
+    q1 = prompt("Do I like people who talks too much?")
     q1 = q1.toLocaleLowerCase();
     if (questionsValdation(q1) == true && (q1 == "n" || q1 == "no")) {
         alert("Correct ! ");

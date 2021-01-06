@@ -2,9 +2,10 @@
 let q1, q2, q3, q4, q5, q6, q7, username, d = document, conter = 0, flag = true, gussing_number_counter = 5, askUser = true, colors = ["yellow", "green", "red"];
 
 
+username = prompt("What is your name?")
+
 function closeMessageDialog() {
 
-    username = prompt("What is your name?")
     d.getElementById('box').style.display = "none";
     d.getElementById('welcoming-user').innerHTML = "Welcome," + username;
 
@@ -84,16 +85,16 @@ function questions() {
             case (q6 == ""):
                 alert("Nothing is entered");
                 break;
-            case (q6 > "20"):
+            case (q6 >= 20):
                 alert("too High");
                 break;
-            case (q6 < "0"):
+            case (q6 <= 0):
                 alert("too low");
                 break;
-            case (q6 < "20" && q6 > "10"):
+            case (q6 <= 19 && q6 >= 11):
                 alert("little Close");
                 break;
-            case (q6 < "10" && q6 > "0"):
+            case (q6 <= 10 && q6 >= 1):
                 alert("very Close");
                 break;
 

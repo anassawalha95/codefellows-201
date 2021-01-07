@@ -20,7 +20,7 @@ function questions() {
     q1 = q1.toLocaleLowerCase();
     if (questionsValdation(q1) == true && (q1 == "n" || q1 == "no")) {
         alert("Correct ! ");
-        //console.log("Question Number 1 correct")
+
         conter++;
     } else {
         alert("False !!")
@@ -31,7 +31,7 @@ function questions() {
     q2 = q2.toLocaleLowerCase();
     if (questionsValdation(q2) == true && (q2 == "yes" || q2 == "y")) {
         alert("Correct ! ");
-        //console.log("Question Number 2 correct")
+
         conter++;
     } else {
         alert("False !!")
@@ -41,7 +41,7 @@ function questions() {
     q3 = q3.toLocaleLowerCase();
     if (questionsValdation(q3) == true && (q3 == "no" || q3 == "n")) {
         alert("Correct ! ");
-        // console.log("Question Number 3 correct")
+
         conter++;
     } else {
         alert("False !!")
@@ -52,7 +52,7 @@ function questions() {
     if (questionsValdation(q4) == true && (q4 == "yes" || q4 == "y")) {
         alert("Correct ! ");
         conter++;
-        // console.log("Question Number 4 correct")
+
     } else {
         alert("False !!")
     }
@@ -62,7 +62,7 @@ function questions() {
     if (questionsValdation(q5) == true && (q5 == "no" || q5 == "n")) {
         alert("Correct ! ");
         conter++;
-        //console.log("Question Number 5 correct")
+
     }
     else {
         alert("False !!")

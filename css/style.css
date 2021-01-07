@@ -5,7 +5,7 @@
 
 
 body {
-	background: linear-gradient(-45deg, #4B6596, #383831, #894B53, #19170A );
+	background: linear-gradient(-45deg, #FA6D5F, #D6AA51, #C0ED66, #2851FA );
 	background-size: 400% 400%;
     animation: gradient 5s ease infinite;
 
@@ -98,6 +98,7 @@ section{
     width: 50%;
     max-height:200px;
     overflow-y: auto;
+    height: 150px;
 }
 
 
@@ -171,12 +172,16 @@ p{
 }
 
 .welcoming-user-section{
-        color:red;
+        color:white;
         width: 38%;
-        height: 44%;
+        border: solid 3px #fff;
+    height: 150px;
         text-align: center;
         font-size: xxx-large;
-        border: none;
+        padding: 44px;
+        
+       
+
 }
 
 .circle-list-style{
